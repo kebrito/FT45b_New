@@ -39,9 +39,10 @@ otra vez cálculos que ya se hicieron anteriormente.
   squareCache(5)    // no volverá a invocar a square, simplemente buscará en la caché cuál es el resultado de square(5) y lo retornará (tip: si usaste un objeto, podés usar hasOwnProperty) */
 
 function cacheFunction(cb) {
-  var obj = {};
+  var obj = {};       //Declaro el objeto
   return function (arg) {
     if (obj.hasOwnProperty(arg)) {
+      //buscamos en el objeto si existe la propiedad mendando hasOwnProperty 
       return obj[arg];
     } else {
       var res = cb(arg);
@@ -86,6 +87,17 @@ function getNombre() {
   IMPORTANTE: no modificar el código de arriba (variables instructor y alumno, y función getNombre)
   Usando el método bind() guardar, en las dos variables declaradas a continuación, dos funciones que actúen como getNombre pero retornen el nombre del instructor y del alumno, respectivamente.
 */
+
+// Bind - Call - Apply -> cambiando el this, a donde a punta
+// Bind -> devuelve una nueva funcion, debo ejecutarla para que me devuelva en nuevo valor bindeado
+// Tanto Call, como Apply, nos devuelven una instancia de la fn, ya modificada
+// Call -> Recibia los argumentos uno a uno
+// Apply recibe los argumentos en un array
+
+// !let getNombreInstructor = getNombre.bind(instructor, "Hola", "Chao");
+// !let getNombreAlumno = getNombre.bind(alumno, "Hi", "Bye");
+// ! let nombreInstructor = getNombre.call(instructor, "Hola", "Chao");
+//! let nombreAlumno = getNombre.apply(alumno, ["Hola", "Chao"]);
 
 let getNombreInstructor = getNombre.bind(instructor);
 let getNombreAlumno = getNombre.bind(alumno);

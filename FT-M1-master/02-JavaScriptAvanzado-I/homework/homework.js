@@ -1,20 +1,19 @@
 //Even Loop
 
 function printing() {
-  console.log(1);  //Primero en imprimir 
+  console.log(1); //Primero en imprimir
   setTimeout(function () {
     console.log(2);
   }, 1000);
   setTimeout(function () {
-    console.log(3);  //2do imprimir
+    console.log(3); //2do imprimir
   }, 0);
-  console.log(4); 
+  console.log(4);
 }
 
 printing();
 
 // Orden de impresion 1,4,3,2
-
 
 //Scope & Hoisting
 
@@ -45,12 +44,10 @@ console.log(x);
 
 //El Resultado del orden de la ejecucion  10-8-8-9-10-1
 
-
 // 2 Do Ejercicio:
 // Global context
 //Fase de creacion ==> Lexicval enviroment ==> {food:fn, bar:undef, baz: undef}
 //FE+> foo()
-
 
 console.log(bar);
 console.log(baz);
@@ -71,11 +68,10 @@ console.log(instructor);
 
 //4 to Ejercicio
 
-
 //funcion de autoejkecutable
 // GC-->
 //FC-->L.E--> {Instructor:undef}
-//F.E 
+//F.E
 
 var instructor = "Tony";
 console.log(instructor);
@@ -102,7 +98,6 @@ console.log(instructor);
 console.log(pm);
 
 //Hoisting
-
 
 function test() {
   console.log(a);

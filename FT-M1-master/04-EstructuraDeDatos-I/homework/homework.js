@@ -16,8 +16,10 @@ Como ejercicio adicional y completamente opcional, al terminar de resolver este 
 
 function nFactorial(n) {
 
+  // 
   if (n === 1) return 1;
-  var nuevonumero = n - 1;
+ 
+  var nuevonumero = n - 1; // 
   console.log(nuevonumero)
   var recursion = nFactorial(nuevonumero);
   var resultado = n * recursion;
@@ -25,7 +27,8 @@ function nFactorial(n) {
   return resultado;
 
   }
-console.log(nFactorial(5))
+
+
 function nFibonacci(n) {
   if (n <= 1) {
     return n;

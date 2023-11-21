@@ -1,5 +1,9 @@
 // Crear un array vacío llamado 'toDoItems'
 // Tu codigo acá:
+<<<<<<< HEAD
+=======
+var toDoItems = [];
+>>>>>>> d717af2f832583d21a7b6c39e38e6c7251a205b5
 
 // En la página 'index.html' hay un elemento span cuyo texto es 'Aplicación creada por:'.
 // Usando querySelector seleccionar dicho span por su id ('createdBy') y luego usando innerHTML
@@ -42,6 +46,10 @@ function ToDo(description) {
 
 function buildToDo(todo, index) {
   // Tu código acá:
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d717af2f832583d21a7b6c39e38e6c7251a205b5
 }
 
 // La función 'buildToDos' debe crear un array de objetos toDo y devolverlo
@@ -51,6 +59,11 @@ function buildToDo(todo, index) {
 
 function buildToDos(toDos) {
   // Tu código acá:
+<<<<<<< HEAD
+=======
+  // [{descriptio:"barrer", complete:false}]
+  // [<div id class>barrer</div>]
+>>>>>>> d717af2f832583d21a7b6c39e38e6c7251a205b5
 }
 
 // La función 'displayToDos' se va a encargar de que se vean los toDo's en pantalla

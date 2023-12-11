@@ -1,9 +1,11 @@
 // Crear un array vacío llamado 'toDoItems'
 // Tu codigo acá:
-<<<<<<< HEAD
-=======
 var toDoItems = [];
->>>>>>> d717af2f832583d21a7b6c39e38e6c7251a205b5
+
+// Aqui utilizo el document para llamar la funcion de todo
+let spam = document.querySelector("#createdBy");
+spam.innerHTML += " Kelly Brito";
+//InnerHTML busca todo el text que tiene el nodo.
 
 // En la página 'index.html' hay un elemento span cuyo texto es 'Aplicación creada por:'.
 // Usando querySelector seleccionar dicho span por su id ('createdBy') y luego usando innerHTML
@@ -19,7 +21,15 @@ var toDoItems = [];
 
 function ToDo(description) {
   // Tu código acá:
+  this.description = description;
+  this.complete = false;
+  
 }
+// class ToDo {
+//   constructor(description) {
+    
+//   }
+// }
 
 // Agregar un método denominado 'completeToDo' al prototipo de la clase ToDo
 // No requiere ningún argumento
@@ -27,6 +37,10 @@ function ToDo(description) {
 
 // Tu código acá:
 
+ToDo.prototype.completeToDo = function () {
+  this.complete = true;
+  
+}
 // Agregar dos parámetros a la función 'buildToDo':
 //    1) Un objeto de la clase ToDo
 //    2) Index numérico
@@ -46,10 +60,27 @@ function ToDo(description) {
 
 function buildToDo(todo, index) {
   // Tu código acá:
-<<<<<<< HEAD
-=======
-  
->>>>>>> d717af2f832583d21a7b6c39e38e6c7251a205b5
+
+  //Crear un elemento 'div' y asignárselo a una variable denominada 'toDoShell'
+  let toDoShell = document.createElement("div");
+
+  //Asignarle a 'toDoShell' la clase 'toDoShell'
+
+  toDoShell.className = "toDoShell";
+
+  //Crear un elemento 'span' y asignárselo a una variable denominada 'toDoText'
+
+  let toDoText = document.createElement("span");
+
+  //Utilizando el objeto toDo pasado como argumento, setear el 'toDoText' innerHTML
+
+  //En función del atributo 'complete' del objeto ToDo recibido como argumento: Si es true: asignarle a 'toDoText' la clase 'completeText'
+
+  //Si es true
+  if (todo.complete) {
+    toDoText.className = "completeText";
+  } else {
+  }
 }
 
 // La función 'buildToDos' debe crear un array de objetos toDo y devolverlo
@@ -59,11 +90,8 @@ function buildToDo(todo, index) {
 
 function buildToDos(toDos) {
   // Tu código acá:
-<<<<<<< HEAD
-=======
   // [{descriptio:"barrer", complete:false}]
   // [<div id class>barrer</div>]
->>>>>>> d717af2f832583d21a7b6c39e38e6c7251a205b5
 }
 
 // La función 'displayToDos' se va a encargar de que se vean los toDo's en pantalla

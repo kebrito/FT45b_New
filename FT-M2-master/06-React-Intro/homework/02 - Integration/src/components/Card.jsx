@@ -1,13 +1,15 @@
 export default function Card(props) {
    return (
       <div>
-         {/* <button onClick={}>X</button>
+         /* <button onClick={function(){
+            onclose()
+         }}>X</button>
          <h2></h2>
          <h2></h2>
          <h2></h2>
          <h2></h2>
          <h2></h2>
-         <img src={} alt='' /> */}
+         <img src={} alt='' /> */
       </div>
    );
 }
